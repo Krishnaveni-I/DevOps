@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body
+        {
+            font-family: Arial, sans-serif;
+            background-color:purple;
+        }
+        .form-container {
+            width: 300px;
+            padding: 16px;
+            background-color:yellow;
+            margin: 0 auto;
+            margin-top: 100px;
+            border: 1px solid blue;
+            border-radius: 4px;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ff0d96;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            background-color: cadetblue;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type=submit]:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="POST">
+            <label><b>Username:</b></label><br>
+            <input type="text" name="username" placeholder="Enter your username" required><br>
+            <label><b>Password:</b></label><br>
+            <input type="password" name="password" placeholder="Enter your password" required><br><br>
+            <input type="submit" name="submit" value="Log in">
+        </form>
+    </div>
+</body>
+</html>
